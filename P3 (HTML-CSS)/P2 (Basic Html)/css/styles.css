@@ -1,0 +1,41 @@
+body
+{
+    text-align: center;
+    background-color: #cfe9d7;
+    color: black;
+        
+}
+
+ul{list-style-position: inside;
+    }
+
+ol{list-style-position: inside;}
+
+td{text-align: left;}
+   
+table{border:1px solid #cfe9d7;margin-left:auto;margin-right:auto;padding: 2px;}
+
+.Name:hover{
+    color: black;
+}
+   
+/*   .Name{color: aqua;}       class - can be used in multiple location
+     #Name{color: aqua;}       id - cannot be used in multiple location     */ 
+hr
+{
+    border-style: dotted none none none;
+    border-color: #439A97;
+    height: 5px;
+    border-width: 4px;
+    width: 5%;
+}
+strong:hover{ color:#1e605e;}
+
+h1{color: #1e605e;
+text-align: center;}
+h1:hover{color: #073634;}
+h2:hover{color: #073634;}
+h3:hover{color: #073634;}
+h2{color: #1e605e;
+text-align: center;}
+h3{color: #1e605e;}

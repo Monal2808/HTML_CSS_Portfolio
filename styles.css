@@ -1,0 +1,180 @@
+:root{
+--background-color:rgb(4,2,16);
+--border-color: rgba(165, 165, 240, 0.35);
+--text-color:rgba(255, 255, 255, 0.8);
+}
+body 
+{
+    background-color: var(--background-color) !important; 
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    
+  /*   overflow: hidden; */             /* commented out cuz we needed over flow unlike the previous(index.html) page */
+}
+
+
+*{box-sizing: border-box;}
+
+h1, h2, h3, a, p, span
+{
+    font-family: "Rubik", sans-serif !important;
+    font-weight: 400;
+    color: rgb(190, 225, 247) !important;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none !important;
+    font-size: large;
+  }
+a:hover
+{
+    color: rgb(255, 255, 255);
+}
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid var(--border-color);
+    
+  }
+#nav-logo{
+    justify-content: left; 
+}
+
+  
+nav .nav-section 
+{
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 2px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+}
+#nav-socials,
+#nav-contact {
+  flex-grow: 1;
+}
+#nav-logo , #nav-link 
+{
+  flex-basis: calc(100%/3); /* calc is a function which calculates mathematical operations */
+}
+#nav-socials , #nav-contact
+{
+  flex-grow: 1;
+}
+#nav-socials 
+{
+  gap: 3rem;
+}
+
+#nav-link
+{
+  gap: 7rem;
+}
+button{ align-items: center;
+    background-color: transparent;
+    border: 0px;
+    color: rgb(249, 252, 255);
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    outline: none;
+    padding: 1rem;
+    position: relative;
+    z-index: 3;}
+
+
+.tit2
+{
+        height: 400px;
+}
+
+.tit p 
+{
+        color: rgb(127, 178, 255) !important;
+}
+
+.tit h1
+{
+    font-family: 'Abril Fatface', cursive;
+}
+
+/* For 1200px and below */
+@media(max-width: 1200px) 
+{    
+    #nav-mobile-section {
+      flex-basis: calc(100% * 0.75);
+    }
+  
+    #nav-logo-section {
+      flex-basis: calc(100% * 0.25);
+    }
+    
+    #nav-link-section {
+      flex-basis: calc(100% / 3);
+      gap: 3rem;
+    }
+}
+/* For 800px and below */
+@media(max-width: 800px)
+{  
+    nav {
+      justify-content: space-between;  
+    }
+    
+    nav[data-toggled="true"] > #nav-mobile-section {  
+      transform: translateY(0%);
+    }
+  
+    nav[data-toggled="true"] > #nav-toggle-button {
+      border-left: none;
+    }
+  
+    nav[data-transitionable="true"] > #nav-mobile-section {
+      transition: transform 400ms ease;
+    }
+    
+    nav .nav-section {
+      border-left: none;
+      padding: 1.5rem 1rem;
+    }
+    
+    #nav-logo-section > a > i {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+    
+    #nav-mobile-section {
+      background-color: var(--background-color);
+      flex-direction: column;
+      height: 100vh;
+      width: 100vw;
+      position: fixed;
+      transform: translateY(-100%);
+    } 
+    
+    #nav-toggle-button {
+      display: flex;
+    }  
+    
+    #nav-link-section {
+      flex-basis: 60%;
+      flex-direction: column;
+      gap: 4rem;
+    }
+    
+    #nav-link-section > a {
+      font-size: 3rem; 
+    }
+    
+    #nav-social-section > a {
+      font-size: 2rem; 
+    }  
+    
+    #nav-contact-section {
+      padding-bottom: 4rem;
+    }
+}

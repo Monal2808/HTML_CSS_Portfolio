@@ -1,0 +1,146 @@
+/* 
+    COLOR PALLET
+        Dark            -    #F8CBA6
+        Lighter-Dark    -    #FFE7CC
+        diff lighter    -    #FFFBEB
+        Lighter ligher  -    #ECF9FF
+
+*/
+
+body{background-color: #ECF9FF ;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Merriweather', serif;}
+
+h1{font-family: 'Sacramento', cursive;
+    font-size: 502.5%; /*100%=16px=1em*/ 
+    margin: 160px auto 30px auto;
+    color: #66BFBF;
+
+}
+
+h2
+{
+    font-family: 'Montserrat', sans-serif;
+    /* fonts.google.com */
+    font-size: 2rem ;
+    color: #4aa6a6;
+    font-weight: bold;
+    }
+
+h3{font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #11999E;}
+
+a{color: #11999E;}
+
+.first-container
+{
+    padding-top: 10px;
+    position: relative;
+}
+
+.bottom-cloud
+{
+    position: absolute;
+    left:320px;
+}
+/* */
+.top-cloud
+{   position: absolute;
+    right: 355px;
+    top: 100px;
+}
+
+.Version1
+{
+    position: relative;
+    right: 10px;
+    border-radius: 30px;
+    padding: 10px;
+}
+.Version2
+{
+    position: relative;
+    left: 10px;  
+    border-radius: 30px;
+    padding: 10px;
+}
+.html
+{
+    float: top;
+    width: 25%;
+    margin-right: 40px;
+}
+.css{float: left;
+    width: 25%;
+    margin-right: 40px;}
+
+.form1
+{
+    position: relative;
+    left: 600px;
+}
+.thirdphase{line-height: 2;}
+
+
+.profile{
+    
+    text-align: left;
+    margin:  100px auto 100px auto;
+    line-height: 2;
+    width: 50%;
+}
+
+.PastVersions{
+    text-align: left;
+    margin:  100px auto 100px auto;
+    width: 50%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.second-container{  
+    width: 200px;
+    height: 200px;
+    background-color: #09c8da;
+}
+
+.third-container{  
+    width: 200px;
+    height: 200px;
+    background-color: #a5c610;
+}
+
+.first-container{
+
+    width: 200px;
+    height: 200px;
+    border: solid 20px;
+    background-color: #3e0b0b;
+/*    border-width: 20px;
+
+    border-color: black;
+    border: 20px;
+    padding: 20px;
+    margin: 20px; 
+ */
